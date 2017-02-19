@@ -12,7 +12,6 @@ fi
 
 # Aliasing
 alias dco='docker-compose'
-alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias git=hub
 
 export PATH="$HOME/.bin:$PATH"
