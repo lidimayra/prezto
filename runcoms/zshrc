@@ -15,9 +15,6 @@ alias dco='docker-compose'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias git=hub
 
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
-
 export PATH="$HOME/.bin:$PATH"
 
 # Sets Hub autocompletions
