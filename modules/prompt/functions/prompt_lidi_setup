@@ -14,8 +14,8 @@ function prompt_lidi_precmd {
 
   vcs_info 'prompt'
 
-  if (( $+functions[python-info] )); then
-    python-info
+  if (( $+functions[ruby-info] )); then
+    ruby-info
   fi
 }
 
@@ -71,13 +71,13 @@ function prompt_lidi_setup {
   zstyle ':vcs_info:*:prompt:*' formats "${branch_format}"
   zstyle ':vcs_info:*:prompt:*' nvcsformats   ""
 
-  # Set python-info parameters.
-  zstyle ':prezto:module:python:info:virtualenv' format '(%v)'
+  # %v - ruby version.
+  zstyle ':prezto:module:ruby:info:version' format '%v'
 
   # Define prompts.
   PROMPT="
-${_prompt_lidi_colors[5]}%~%f "'${vcs_info_msg_0_}'"
-"'$python_info[virtualenv]'"→︎ "
+${_prompt_lidi_colors[5]}%~%f "'${vcs_info_msg_0_}'" "${_prompt_lidi_colors[4]}'${ruby_info[version]}'"
+${_prompt_lidi_colors[3]}→︎ %F{white}"
   RPROMPT=''
 }
 
