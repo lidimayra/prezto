@@ -57,10 +57,10 @@ function prompt_lidi_setup {
   #   %a - action (e.g. rebase-i)
   #   %R - repository path
   #   %S - path in the repository
-  local branch_format="(${_prompt_lidi_colors[1]}%b%f%u%c)"
-  local action_format="(${_prompt_lidi_colors[5]}%a%f)"
-  local unstaged_format="${_prompt_lidi_colors[2]}●%f"
-  local staged_format="${_prompt_lidi_colors[5]}●%f"
+  local branch_format="${_prompt_lidi_colors[1]}%b %f%u%c"
+  local action_format="${_prompt_lidi_colors[5]}%a%f"
+  local unstaged_format="${_prompt_lidi_colors[2]}✹%f "
+  local staged_format="${_prompt_lidi_colors[5]}✔︎%f "
 
   # Set vcs_info parameters.
   zstyle ':vcs_info:*' enable bzr git hg svn
