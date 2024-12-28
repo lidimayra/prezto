@@ -36,3 +36,7 @@ if [ -f "${HOME}/Downloads/google-cloud-sdk/completion.zsh.inc" ]; then source "
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Specify a fixed path for TMPDIR to avoid issues with watchman. Without this, it relies on the random directory
+# defined by Mac OS, which breaks watchman and causes conflicts when opening Neovim
+export TMPDIR=/tmp
