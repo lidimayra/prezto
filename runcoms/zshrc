@@ -13,6 +13,7 @@ fi
 # Aliasing
 alias dco='docker-compose'
 alias git=hub
+alias agi='ag --ignore=log'
 
 export PATH="$HOME/.bin:$PATH"
 
