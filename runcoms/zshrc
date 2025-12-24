@@ -40,3 +40,6 @@ export NVM_DIR="$HOME/.nvm"
 # Specify a fixed path for TMPDIR to avoid issues with watchman. Without this, it relies on the random directory
 # defined by Mac OS, which breaks watchman and causes conflicts when opening Neovim
 export TMPDIR=/tmp
+
+# Activate mise
+eval "$(mise activate zsh)"
